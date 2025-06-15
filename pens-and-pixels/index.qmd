@@ -6,4 +6,4 @@ This is blog about data, technology and human affairs.
 
 To learn more about the author visit <https://github.com/DSD-resilience>.
 
-Specific subjects that write about are data science and international affairs.  General subjects are healthcare and scientific discoveries.
+Specific subjects that write about are data science and artificial intelligence.  General subjects are healthcare and scientific discoveries.
