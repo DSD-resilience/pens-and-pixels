@@ -3,7 +3,6 @@ project:
   
 output-dir: gh-pages
 website: 
-  site-url: https://dsd-resilience.github.io/pens-and-pixels/
   title: "Pens and Pixels"
   navbar:
     left:
