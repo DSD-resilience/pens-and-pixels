@@ -7,3 +7,5 @@ This is blog about data, technology and human affairs.
 To learn more about the author visit <https://github.com/DSD-resilience>.
 
 Specific subjects that write about are data science and artificial intelligence.  General subjects are healthcare and scientific discoveries.
+
+Some of my favorite sources are Scientific American and TechCrunch.
