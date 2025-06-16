@@ -1,0 +1,13 @@
+---
+title: "A Newer Version of R"
+author: "JT Miller"
+date: "2025-06-15"
+categories: [news, code, analysis]
+image: "image.jpg"
+---
+
+This is a post about updates to R in 2025.
+
+```{r}
+1 + 1
+```

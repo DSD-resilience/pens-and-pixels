@@ -1,6 +1,10 @@
 [
   {
     "listing": "/index.html",
-    "items": []
+    "items": [
+      "/posts/post-with-code/index.html",
+      "/posts/R-newer-version-with-code/index.html",
+      "/posts/welcome/index.html"
+    ]
   }
 ]
