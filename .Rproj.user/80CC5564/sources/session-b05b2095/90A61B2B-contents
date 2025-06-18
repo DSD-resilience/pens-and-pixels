@@ -7,9 +7,9 @@ website:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/DSD-resilience
       - icon: twitter
-        href: https://twitter.com
+        href: https://x.com/JohnMiller73029
 format:
   html:
     theme:
