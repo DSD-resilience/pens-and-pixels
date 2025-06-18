@@ -1,9 +1,10 @@
 ---
-title: "Post With Code"
+title: "Unique post With Code"
+slug: "my-new-post"
 author: "Harlow Malloc"
-date: "2025-06-15"
+date: "2025-06-17"
 categories: [news, code, analysis]
-image: "image.jpg"
+image: "image1.jpg"
 ---
 
 This is a post with executable code.
