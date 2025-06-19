@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "I help people understand and use data models. Some of my favorite subjects to write about include data, technology and human affairs.\nOne effective structure for online content is provide an overview of the problem, then contrast it with the perfect endstate or a positive vision of the future. Finally, provide a step-by-step solution that gets your reader from the problem to the endstate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 15, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 15, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 12, 2025\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
+    "text": "I help people understand and use data models. Some of my favorite subjects to write about include data, technology and human affairs.\nOne effective structure for online content is provide an overview of the problem, then contrast it with the perfect endstate or a positive vision of the future. Finally, provide a step-by-step solution that gets your reader from the problem to the endstate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYet another unique post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 19, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nUnique post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 17, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 15, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 12, 2025\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/R-newer-version-with-code/index.html",
@@ -38,6 +38,13 @@
     "objectID": "posts/CopyOfpost-with-code/index.html",
     "href": "posts/CopyOfpost-with-code/index.html",
     "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/CopyOfCopyOfpost-with-code/index.html",
+    "href": "posts/CopyOfCopyOfpost-with-code/index.html",
+    "title": "Yet another unique post With Code",
     "section": "",
     "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
   }

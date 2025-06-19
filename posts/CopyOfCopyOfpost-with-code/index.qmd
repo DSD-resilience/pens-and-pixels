@@ -1,0 +1,14 @@
+---
+title: "Yet another unique post With Code"
+slug: "my-newer-post"
+author: "Harlow Malloc"
+date: "2025-06-19"
+categories: [news, code, analysis]
+image: "image2.jpg"
+---
+
+This is a post with executable code.
+
+```{r}
+1 + 1
+```
