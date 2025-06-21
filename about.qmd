@@ -15,14 +15,16 @@ about:
       href: https://github.com
 ---
 
--   👋 Hi, I’m JT, from DSD. We help people understand and use data models.
+👋 Hi, I’m JT, from DSD. We help people understand and use data models.
 
--   👀 Key areas of research and development are statistics, AI-ML, and cyber resiliency.
+👀 Key areas of research and development are statistics, AI-ML, and cyber resiliency.
 
--   🌱 Let's help you find more and better ways to analyze data with R, Python and SQL.
+![](images/clipboard-1789841209.png){width="20"} I write about data, technology and human affairs.
 
--   💞️ Your clients can benefit from our collaborations on machine learning applied for strategic insights, statistical analysis and data cleaning.
+🌱 Let's help you find more and better ways to analyze data with R, Python and SQL.
 
--   📫 Let's communicate: [millerauthor\@datascientistdude.com](mailto:millerauthor@datascientistdude.com) for business inquiries please.
+💞️ Your clients can benefit from our collaborations on machine learning applied for strategic insights, statistical analysis and data cleaning.
 
--   😄 Dad Joke of the Day: I went to buy a pair of camouflage pants.... but I couldn't find any!
+📫 Let's communicate: [millerauthor\@datascientistdude.com](mailto:millerauthor@datascientistdude.com) for business inquiries please.
+
+😄 Dad Joke of the Day: I went to buy a pair of camouflage pants.... but I couldn't find any!
