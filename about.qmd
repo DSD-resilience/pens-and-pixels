@@ -19,7 +19,7 @@ about:
 
 👀 Key areas of research and development are statistics, AI-ML, and cyber resiliency.
 
-![](images/clipboard-1789841209.png){width="20"} I write about data, technology and human affairs.
+![](images/clipboard-1789841209.png){width="20"} I write regular features on [Medium](https://datascientistdude.medium.com/) and [Substack](https://substack.com/@datascientistdude?utm_source=user-menu).
 
 🌱 Let's help you find more and better ways to analyze data with R, Python and SQL.
 
