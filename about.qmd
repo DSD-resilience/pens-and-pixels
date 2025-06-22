@@ -6,13 +6,13 @@ about:
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com
+      href: https://x.com/JohnMiller73029
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/john-t-miller/
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/DSD-resilience
 ---
 
 👋 Hi, I’m JT, from DSD. We help people understand and use data models.
