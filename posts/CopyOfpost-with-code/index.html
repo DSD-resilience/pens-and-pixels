@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Harlow Malloc">
-<meta name="dcterms.date" content="2025-06-15">
+<meta name="author" content="John T. Miller">
+<meta name="dcterms.date" content="2025-06-17">
 
-<title>Post With Code – Pens and Pixels</title>
+<title>Linear Regression for Gentle Souls – Pens and Pixels</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -151,10 +151,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Post With Code</h1>
+      <h1 class="title">Linear Regression for Gentle Souls</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+                <div class="quarto-category">R</div>
                 <div class="quarto-category">code</div>
+                <div class="quarto-category">regression</div>
                 <div class="quarto-category">analysis</div>
               </div>
                   </div>
@@ -166,14 +167,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Harlow Malloc </p>
+               <p>John T. Miller </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">June 15, 2025</p>
+        <p class="date">June 17, 2025</p>
       </div>
     </div>
     
@@ -192,15 +193,95 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>This is a post with executable code.</p>
+<p><img src="pupply.jpg" class="img-fluid"></p>
+<section id="linear-regression-in-r-for-gentle-souls" class="level1">
+<h1><strong>Linear Regression in R for Gentle Souls</strong></h1>
+<p>In statistics, linear regression is a linear approach for modelling the relationship between a response and one or more explanatory variables. It is fairly intuitive and works fairly well in the cases where a linear relationship exists between variables.</p>
+<p>Linear regression is a statistical technique used to model the relationship between a dependent variable (also known as the response variable) and one or more independent variables (also known as predictor variables). The goal of linear regression is to find the best linear relationship between the dependent variable and the independent variables.</p>
+<p>In simple linear regression, there is only one independent variable. The relationship between the dependent variable and the independent variable can be represented by a straight line, hence the term “linear” regression. The equation for a simple linear regression model is:</p>
+<p>Y = a + bX + e</p>
+<p>Where:</p>
+<ul>
+<li><p>Y is the dependent variable</p></li>
+<li><p>X is the independent variable</p></li>
+<li><p>a is the intercept (the value of Y when X=0)</p></li>
+<li><p>b is the slope (the change in Y for a one-unit change in X)</p></li>
+<li><p>e is the error term (the difference between the predicted value of Y and the actual value of Y)</p></li>
+</ul>
+<p>In multiple linear regression, there are multiple independent variables. The equation for a multiple linear regression model is similar to the simple linear regression model, but with multiple independent variables:</p>
+<p>Y = a + b1X1 + b2X2 + … + bnXn + e</p>
+<p>Where:</p>
+<ul>
+<li><p>Y is the dependent variable</p></li>
+<li><p>X1, X2, …, Xn are the independent variables</p></li>
+<li><p>a is the intercept</p></li>
+<li><p>b1, b2, …, bn are the slopes</p></li>
+<li><p>e is the error term</p></li>
+</ul>
+<p>To build a linear regression model in R, you can use the <code>lm()</code> function. Here’s an example:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load necessary libraries</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'ggplot2'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Installing package into '/cloud/lib/x86_64-pc-linux-gnu-library/4.4'
+(as 'lib' is unspecified)</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the iris dataset</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(iris)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit a simple linear regression model</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(Petal.Width <span class="sc">~</span> Petal.Length, <span class="at">data =</span> iris)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the model summary</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<pre><code>
+Call:
+lm(formula = Petal.Width ~ Petal.Length, data = iris)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.56515 -0.12358 -0.01898  0.13288  0.64272 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  -0.363076   0.039762  -9.131  4.7e-16 ***
+Petal.Length  0.415755   0.009582  43.387  &lt; 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.2065 on 148 degrees of freedom
+Multiple R-squared:  0.9271,    Adjusted R-squared:  0.9266 
+F-statistic:  1882 on 1 and 148 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot with regression line</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris, <span class="fu">aes</span>(<span class="at">x =</span> Petal.Length, <span class="at">y =</span> Petal.Width)) <span class="sc">+</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Simple Linear Regression: Petal.Length vs Petal.Width"</span>,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Petal Length"</span>,</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Petal Width"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
 </div>
+</div>
+<p>We first load the data and build a simple linear regression model using the&nbsp;<code>lm()</code>&nbsp;function. We then view the summary of the model to see the coefficients, R-squared value, and other statistics. We can then make predictions using the model by creating a new data frame with the independent variable values we want to predict for, and using the&nbsp;<code>predict()</code>&nbsp;function to generate the predicted values.</p>
+</section>
+<section id="final-thought" class="level1">
+<h1><strong>Final Thought</strong></h1>
+<p>Be advised that a linear relationship does not always exist between two variables, yet they are related. Linear regression is just one tool of many that can be utilized to describe the reality of your data.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
