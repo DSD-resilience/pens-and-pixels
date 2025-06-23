@@ -1,14 +1,54 @@
 ---
-title: "Yet another unique post With Code"
+title: "Dad Bod Be Gone"
 slug: "my-newer-post"
-author: "Harlow Malloc"
-date: "2025-06-19"
-categories: [news, code, analysis]
+author: "John T. Miller"
+date: "2022-12-28"
+categories: [fitness, health, analysis]
 image: "image2.jpg"
 ---
 
-This is a post with even more executable code.
+![](dad drinks.jpg)
 
-```{r}
-1 + 1
-```
+# **Dad Bod Be Gone**
+
+Fathers have a unique and important role in their children’s lives. Not only do they provide emotional and financial support, but fathers also have a unique opportunity to pass on physical fitness habits to their children.
+
+I had this in mind as I asked a friend about what makes for a good diet and fitness plan. These two things are inextricably linked. There is a reason that you constantly hear the phrase, “diet *and* exercise.” You simply can’t work out like a madman and come home to eat an entire pizza. You have to consider the long-term consequences of both because one affects the other.
+
+Googling or otherwise internet searching yields a nightmare of advertisements and dubious information that you still have to sift through. [ChatGPT](https://openai.com/blog/chatgpt/) is getting there, and worth a spin. However, I had a source close to home.
+
+Luckily for us, my friend is both a fitness trainer *and* a trained chef.
+
+This is what he recommended:
+
+1.  Stop drinking alcohol. “Sorry Bro” were his exact words. I know some people will already be flipping out but being more discriminating about when and what you drink will only increase your appreciation for good alcohol.
+
+2.  Sensible carbohydrate intake. Your mainstays are going to be greener and not the pasta and bread that you eat now.
+
+3.  Plan your protein intake. Moderate amounts are fine.
+
+4.  Good fats are largely ok.
+
+5.  Nix any bad oils.
+
+6.  Intermittent fasting works.
+
+7.  Regular zone cardio exercise.
+
+8.  [Resistance](https://www.youtube.com/@calimove) training, and it *doesn’t* necessarily require any equipment.
+
+“I prefer not to drink and I think it directly contributed to me seeing my ab muscles for the first time in my life, as has the rest of the list. That being said, some studies have suggest that small amounts of alcohol may have health benefits for some people, such as lowering blood pressure and the risk of blood clots. You can drink, but sparingly.
+
+A low carbohydrate diet with moderate protein and healthy fats can be an effective way to manage weight and improve overall health. To execute this type of diet, you can focus on consuming whole, unprocessed foods such as vegetables, nuts, seeds, and healthy fats like avocado, olive oil, and coconut oil. You can also include moderate amounts of protein sources like eggs, chicken, fish, and tofu. It is important to avoid bad oils like vegetable oil, canola oil, and margarine, and instead opt for healthier options like olive oil and avocado oil.
+
+Intermittent fasting is a dietary pattern that involves alternating periods of eating and fasting. One way to incorporate intermittent fasting into your diet is to do a 16/8 split, where you fast for 16 hours and then eat during an 8-hour window. For example, you could stop eating at 8pm and then not eat again until noon the next day. This can be a convenient way to structure your eating habits and can also help with weight management.
+
+In terms of fitness, incorporating zone cardiovascular exercise can be a great way to improve your cardiovascular health and burn calories. Zone cardiovascular exercise involves working at a specific heart rate zone, typically between 50–85% of your maximum heart rate, in order to achieve specific training goals. This can be done through activities like running, cycling, swimming, or using cardio machines like treadmills or stationary bikes.
+
+In addition to zone cardiovascular exercise, it is also important to incorporate resistance training into your fitness routine. Resistance training can help build and maintain muscle mass, improve bone density, and increase metabolism. All of these things are very important as we grow older. Aim to do three to five days of resistance training per week, using a variety of exercises that target different muscle groups. Some examples of resistance training exercises include squats, lunges, push-ups, rows, and bicep curls and even running in the pool. I am a fan of kettle bells because of the range of movement and number of exercises possible. Dumbbells are also a good option because you can more or less isolate muscles on one side of your body. It is important to start with a weight that is manageable and that you gradually increase the weight as you become stronger.”
+
+Overall, a diet that is low in carbohydrates and incorporates intermittent fasting, combined with zone cardiovascular exercise and resistance training, can be an effective way to manage weight, improve overall health, and achieve your fitness goals.
+
+# **Final Thoughts**
+
+That’s it, aside from adopting the right mindset. **Stay positive.** Don’t buy anything new other than more green, leafy food. **Be consistent** and track your progress in a free tool like Google Calendar. Or even just a pencil and that free paper calendar that you got from your local bank, gas station, or in my case the public works department of the City of Baltimore. If you stray from the path, be kind to yourself and guide yourself back to the path as soon as possible. **Find others** who can share your diet and exercise plan. Find joy in them and the process. If it all seems overwhelming then just breathe, order a small low-carb Thai food takeout dish and enjoy.
