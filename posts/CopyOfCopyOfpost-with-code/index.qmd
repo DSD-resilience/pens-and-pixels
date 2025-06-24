@@ -7,7 +7,7 @@ categories: [fitness, health, analysis]
 image: "image2.jpg"
 ---
 
-![](dad drinks.jpg)
+![](dad%20drinks.jpg)
 
 # **Dad Bod Be Gone**
 

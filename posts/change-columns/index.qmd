@@ -1,0 +1,166 @@
+---
+title: "Easily Create and Change Columns in Your Data"
+slug: "my-new-post"
+author: "John T. Miller"
+date: "2025-05-12"
+categories: [R, code, dplyr, analysis]
+image: "image1.jpg"
+---
+
+# ![](christian-crocker-unsplash.jpg)
+
+# **Easily Create and Change Columns in Your Data**
+
+### The dplyr package for R has an amazing tool that makes data enrichment a breeze
+
+# **Introduction**
+
+The `mutate()` function from the `dplyr` package is one of the most versatile and widely used functions in the R programming language for data manipulation. It allows users to create new variables or modify existing ones within a dataframe or tibble. `mutate()` is part of the `dplyr` grammar of data manipulation and is frequently used in data cleaning, transformation, and feature engineering workflows.
+
+This tutorial provides a comprehensive overview of `mutate()` with two detailed examples and aims to empower you to use this function confidently and effectively in your data analysis projects.
+
+# **What is `mutate( )`?**
+
+The `mutate()` function is used to create or transform variables in a data frame. It adds new columns while retaining all existing ones. It can also be used to overwrite existing columns with new values.
+
+```         
+mutate(.data, ...)
+```
+
+-   `.data`: A data frame, tibble, or other compatible data object.
+
+-   `...`: Name-value pairs of expressions. The name gives the name of the column and the expression defines how its values are calculated.
+
+A simple way to remember the parts of the `mutate()` function in `dplyr` is to use this **easy formula**:
+
+# **📘 “mutate = data + new column = transformation”**
+
+You can also think of it as:
+
+``` R
+mutate(data, new_column = transformation_of_existing_column)
+```
+
+Here’s a breakdown using **memory-friendly templates**:
+
+## ***“Take the data, mutate it by naming a new column, then define how it’s changed.”***
+
+```         
+penguins %>%   mutate(body_mass_kg = body_mass_g / 1000)
+```
+
+-   **penguins** is your data
+
+-   **body_mass_kg** is the new column
+
+-   **= body_mass_g / 1000** is how to create it
+
+> ***D-N-E-C**: “Don’t Neglect Essential Columns”*
+
+Where D means Data `penguins %>%` , and N means New column name, `body_mass_kg` , E is Equals `=` or `<-` and C is Change (transformation) `body_mass_g / 1000`
+
+# **Why Use `mutate( )`?**
+
+However, you may ask, why would I use `mutate( )` anyway? If I properly clean and process my data then Microsoft Excel or another program is good enough. You might think so, but proficiency with `mutate( )` can save you time and effort. Sometimes you don’t want to switch between programs. You can stay in your R IDE and derive new variables based on existing data, conducting a more thorough exploratory analysis and improve feature engineering.
+
+Further, `mutate( )` enables data transformations that prepare variables for modeling, such as scaling, encoding categorical values, or applying mathematical operations. You can also standardize or normalize values efficiently, ensuring consistency across datasets. Overall, it simplifies the data cleaning process by allowing clear, step-by-step creation and transformation of variables within a tidy workflow. You can also document your data cleaning with `#remarks` all through the process, which leads to better reproducibility.
+
+# **Creating New Variables**
+
+```         
+df <- tibble(height = c(1.75, 1.82, 1.60), weight = c(65, 70, 50)) df <- df %>% mutate(BMI = weight / (height^2))
+```
+
+New variables are a snap. For example, this code creates a new `BMI` column based on the height and weight values.
+
+# **Modifying Existing Variables**
+
+```         
+df <- df %>% mutate(weight = weight * 2.2)  # Convert weight to pounds
+```
+
+A great use case for modifying your variables if you need to efficiently change over an entire column to another measure. This code overwrites the `weight` column with its value in pounds.
+
+# **Using `mutate( )` with Conditional Logic**
+
+``` R
+df <- df %>% mutate(category = ifelse(BMI > 25, "Overweight", "Normal"))
+```
+
+As you develop more skill in using `mutate( )`, you may find yourself using conditionals. This code adds an entirely new `category` column based on BMI thresholds. Now counts of “Overweight” vs. “Normal” can be used for bar charts or whatever appropriate visualization you choose.
+
+# **Combining `mutate( )` with `across( )`**
+
+Not convinced how handy it is yet? Then try using the `across()` function, which allows for applying a function to multiple columns!
+
+```         
+df <- df %>% mutate(across(height:weight, round, digits = 1))
+```
+
+Now both`height` and `weight` columns are narrowed to one decimal place, with one short line of code.
+
+# **Using Functions Inside `mutate( )`**
+
+```         
+add_tax <- function(x) x * 1.07 df <- df %>% mutate(price_with_tax = add_tax(weight))
+```
+
+You can even use user-defined or built-in functions inside `mutate()`. Write a function yourself and apply it. Even PowerBI is not this easy.
+
+# **Grouped Mutations with `group_by( )`**
+
+```         
+data <- tibble(group = c("A", "A", "B"), value = c(10, 20, 30)) data <- data %>% group_by(group) %>% mutate(mean_value = mean(value))
+```
+
+`group_by( )` is also your good friend. This code adds a new column with the group-wise mean of `value`.
+
+# **Chaining with the Pipe Operator `%>%`**
+
+Remember, that the pipe operator `%>%` from `magrittr` makes it easy to chain multiple operations. Process all your data in an easy-to-follow manner:
+
+```         
+data %>%   group_by(group) %>%   mutate(centered = value - mean(value))
+```
+
+This code subtracts the group mean from each value.
+
+# **Detailed Example 1: Calculating Body Mass Index (BMI)**
+
+Let’s walk through an example you can totally steal.
+
+```         
+library(dplyr) people <- tibble(   name = c("Alice", "Bob", "Carlos"),   height_m = c(1.65, 1.80, 1.75),   weight_kg = c(68, 85, 77) )
+```
+
+```         
+people <- people %>%   mutate(BMI = weight_kg / (height_m^2)) %>%   mutate(category = case_when(     BMI < 18.5 ~ "Underweight",     BMI >= 18.5 & BMI < 25 ~ "Normal",     BMI >= 25 ~ "Overweight"   ))print(people)
+```
+
+# **Detailed Example 2: Adding Profit Margins in Sales Data**
+
+As if that is not enough, here is one more example. Every good business has a profit / loss statement. Make yours using this code:
+
+```         
+#first build out the data and notice we're make a tibble with dplyr sales <- tibble(   product = c("A", "B", "C"),   revenue = c(1000, 1500, 800),   cost = c(700, 1000, 600) )
+```
+
+```         
+#then find your profit easily with mutate( )sales <- sales %>%   mutate(     profit = revenue - cost,     profit_margin = round(profit / revenue, 2)   )print(sales)
+```
+
+# **Common Mistakes and How to Avoid Them**
+
+Errors simply suck. When using `mutate()` in R, it's important to watch out for common mistakes that can lead to errors or unexpected results. One frequent issue is **forgetting to assign the result back to the data object**, such as `df <- df %>% mutate(...)`, which means the changes won’t be saved.
+
+Another risk is **accidentally overwriting important columns**, which can lead to loss of original data. It's also easy to run into problems if missing values aren’t handled properly, especially when performing calculations. Finally, an R oldie but goodie is using incorrect or **misspelled column names**, which will cause your code to break, so always double-check for typos or non-existent variables.
+
+# **Best Practices**
+
+To create clear and efficient data workflows in R, it’s helpful to use `mutate()` alongside `select()` and `filter()`, allowing you to focus on relevant variables while transforming data. Always label new variables clearly to make your code more readable and maintainable. For more complex conditional logic, `case_when()` inside `mutate()` provides a clean way to assign values based on multiple conditions. Chaining these operations with the pipe `%>%` keeps your code organized and easy to follow from start to finish.
+
+# **Conclusion**
+
+`mutate()` is a cornerstone function in `dplyr` that enables powerful, readable, and efficient data transformations. Whether you're cleaning a dataset, performing exploratory data analysis, or engineering features for a model, `mutate()` helps you derive new insights with minimal code. By practicing the examples provided and understanding the syntax, you will be able to unlock more of R’s data wrangling capabilities with ease.
+
+Continue exploring `dplyr` and try combining `mutate()` with other verbs like `filter()`, `arrange()`, and `summarise()` to develop even more effective data workflows.

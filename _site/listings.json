@@ -2,8 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/CopyOfpost-with-code/index.html",
+      "/posts/linear-regression-with-code/index.html",
       "/posts/post-with-code/index.html",
+      "/posts/change-columns/index.html",
       "/posts/CopyOfCopyOfpost-with-code/index.html",
       "/posts/welcome/index.html"
     ]
