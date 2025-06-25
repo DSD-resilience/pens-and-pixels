@@ -1,0 +1,122 @@
+---
+title: "What is Workflow Anyway?"
+slug: "my-newer-post2"
+author: "John T. Miller"
+date: "2025-05-28"
+categories: [data, Python, R, Analysis]
+image: "image2.jpg"
+---
+
+# **What is Workflow Anyway?**
+
+## A software development term that is often used and just as often misunderstood.
+
+A [data science](https://www.nnlm.gov/guides/data-glossary/data-science#:~:text=Definition,knowledge%20or%20solving%20a%20problem.) workflow is a structured, repeatable process for turning raw data into actionable insights, covering everything from data collection to communication. It ensures your work is organized, reproducible, and scalable. It is how you approach a defined task and preferably you are going to do it the same way every time. Although you may want to tweak and improve your way of doing things as circumstances dictate.
+
+If you’re going to be writing a lot of R code, or otherwise doing a lot of data analysis, it’s worth investing some time to plan and edit your basic workflow. This is because it tends to pay great [dividends](https://www.datascience-pm.com/data-science-workflow/#:~:text=Using%20a%20well%2Ddefined%20data%20science%20workflow%20is,done%20to%20do%20a%20data%20science%20project.&text=Each%20phase%20(Business%20understanding%2C%20data%20understanding%2C%20data,of%20deliverables%20such%20as%20documentation%20and%20reports.) in the long run. It doesn’t just increase the proportion of your time spent writing code, but because you see the results more quickly, it makes the process of writing code more enjoyable, and helps your skills improve more quickly.
+
+Think of it as a way to get immediate feedback on your [deliberate practice](https://www.youtube.com/watch?v=1-sjUoGO250&t=100s&pp=ygUeZGVsaWJlcmF0ZSBwcmFjdGljZSBrbm93bGVkZ2Ug).
+
+Are you sold on the idea of at least having a rough outline of how you perform routine data analysis tasks? Great! [Let’s gooo](https://www.youtube.com/shorts/EIk312jE8vw)…. I like to break nine well-known steps down into groups of three. Three phases of three, if that helps.
+
+1.  Plan, collect and clean
+
+2.  Explore, model and validate
+
+3.  Communicate, reproduce and deploy
+
+# **Plan, Collect, Clean**
+
+**Planning** begins with clearly defining the problem or question to be answered. This includes identifying the stakeholders, determining the data requirements, and mapping out a realistic timeline. A good plan ensures alignment between objectives and available resources, and helps avoid unnecessary data collection or redundant efforts.
+
+**Data collection** involves gathering data from appropriate sources, which could include databases, APIs, surveys, sensors, or web scraping. This step requires careful documentation of data provenance, formats, and limitations. It’s important to ensure ethical and legal compliance, particularly when dealing with sensitive or personal information.
+
+**Cleaning** is often the most time-consuming part of the workflow. Raw data is rarely ready for analysis; it may contain missing values, inconsistencies, outliers, or incorrect formats. Cleaning includes handling null values, standardizing units or categories, correcting data entry errors, and filtering irrelevant observations. Automation tools and scripts in R or Python are commonly used to streamline this process and maintain reproducibility.
+
+# **Explore, Model, Validate**
+
+**Exploration**, or exploratory data analysis (EDA), helps uncover patterns, trends, and relationships in the data. This involves generating summary statistics, visualizing distributions, and identifying correlations or clusters. Techniques like histograms, boxplots, scatterplots, and [heatmaps](https://r-graph-gallery.com/heatmap) are commonly used. An EDA can also reveal hidden problems, such as multicollinearity (When two or more independent variables in a regression model are highly correlated, meaning they provide similar information about the relationship with the target variable) or skewed distributions, which inform modeling choices.
+
+**Modeling** involves selecting and applying algorithms to make predictions or classifications based on the data. The choice of model — linear regression, decision trees, support vector machines, etc. — depends on the problem type (e.g., regression vs. classification) and the nature of the data. [Feature engineering](https://www.tmwr.org/recipes), selecting variables, and tuning hyperparameters are key parts of this phase. Good modeling aims to strike a balance between simplicity and performance.
+
+**Validation** ensures the model’s reliability and generalizability. Techniques like cross-validation, train-test splits, and performance metrics (e.g., accuracy, [RMSE](https://www.rdocumentation.org/packages/Metrics/versions/0.1.4/topics/rmse), [AUC](https://www.rdocumentation.org/packages/pROC/versions/1.18.5/topics/auc)) are used to assess how well the model performs on unseen data. Validation helps detect overfitting and underfitting and is critical before deploying a model in real-world applications.
+
+# **Communicate, Reproducibility, Deployment**
+
+**Communication** involves translating technical findings into clear, actionable insights for stakeholders. This can take the form of reports, dashboards, presentations, or interactive apps. Effective communication requires tailoring the message to the audience, focusing on key results, and using visuals to clarify complex ideas. Tools like [Tableau](https://www.tableau.com/), [Power BI](https://www.microsoft.com/en-us/power-platform/products/power-bi), or [R Shiny](https://shiny.posit.co/) are often used to share insights dynamically. I prefer data storytelling because you have to elicit an emotion in order to stimulate action. I don’t enjoy conducting thorough analysis that is never utilized, and I assume you don’t either.
+
+**Reproducibility** ensures that the entire analysis can be replicated by others or by your future self. This involves documenting code, version controlling with Git, and using consistent environments through tools like R-Studio projects, virtual environments, or [Docker](https://www.docker.com/products/docker-hub/) containers. Reproducibility is essential for transparency, collaboration, and scientific rigor — especially in regulated or academic settings.
+
+**Deployment** is the process of putting models or analysis outputs into a live environment where they can be used by others. This might include integrating a model into a web application, automating a data pipeline, or delivering scheduled reports. Deployment tools include [Flask](https://flask.palletsprojects.com/), APIs, cloud services (e.g., AWS, Azure), and platforms like [Posit Connect](https://posit.co/products/enterprise/connect/).
+
+# **🧱 A Data Science Workflow in Practice**
+
+Let’s outline the steps and include what happens as well as what tools and R packages you can use:
+
+1.  **Problem Framing:** Define the question or hypothesis
+
+Notes, Notebooks, Google Drive, Google Docs, Google Collab
+
+**2. Data Collection:** Get the data (APIs, CSVs, scraping, databases)
+
+`httr`, `rvest`, `DBI`, `readr`, `googlesheets4`
+
+**3. Data Cleaning / Wrangling:** Tidy, filter, reshape, handle missing data
+
+`dplyr`, `tidyr`, `janitor`, `lubridate`
+
+**4. Exploratory Data Analysis (EDA):** Summarize and visualize patterns
+
+`ggplot2`, `skimr`, `corrplot`, `plotly`
+
+**5. Modeling / Inference:** Build models or run statistical tests
+
+`caret`, `tidymodels`, `lm()`, `glm()`, `rstanarm`
+
+**6. Validation:** Check model performance or statistical assumptions
+
+`yardstick`, `rsample`, residual plots
+
+**7. Communication:** Create reports, dashboards, or apps
+
+`rmarkdown`, `flexdashboard`, `shiny`, `gt`
+
+**8. Deployment:** Make it usable by others (web app, API, report)
+
+`shinyapps.io`, `plumber`, `Docker`, [GitHub](https://github.com/)
+
+**9. Reproducibility & Version Control:** Track code, share data, automate workflows
+
+`renv`, `targets`, `drake`, Git, [GitHub](https://github.com/)
+
+# **⚙️ R-Specific Workflow Best Practices**
+
+-   Use **Tidyverse** for wrangling and plotting (clean, readable code)
+
+-   Use **`projects`** and **`here::here()`** to manage paths
+
+-   Document code using **R Markdown**
+
+-   Automate steps with **`targets`** or **`drake`**
+
+-   Track packages with **`renv`**
+
+# **🧭 Azimuth Check:**
+
+Pause and consider if this all makes sense to you. Further, think of a data science workflow like a **recipe**:
+
+-   Ingredients = data
+
+-   Prep = wrangling/cleaning
+
+-   Cooking = modeling
+
+-   Tasting = validation
+
+-   Serving = communication
+
+-   Cook book= writing it all down so you can do it again (or share it)
+
+# **Final Thoughts**
+
+Workflows are comprised of how you methodically solve problems. At some point you may have to readjust and go back and do a single step or a whole phase over. For example, if you start modeling, and you realize you don’t have enough data then you clearly have to collect more. This is normal because life isn’t perfect. There are more tools that exist to assist you in your workflow, such as [`targets`](https://www.appsilon.com/post/6-benefits-of-r-targets-for-data-science-workflows). Finally, your workflow also includes debugging. Approach your debugging with deliberate purpose, and you will find that get more positive outcomes.
