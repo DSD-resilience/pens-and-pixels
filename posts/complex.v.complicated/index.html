@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="John T. Miller">
-<meta name="dcterms.date" content="2025-05-28">
+<meta name="dcterms.date" content="2025-05-15">
 
-<title>What is Workflow Anyway? – Pens and Pixels</title>
+<title>The Double-Edged Code: How Data Became Both Our Salvation and Our Undoing – Pens and Pixels</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,12 +116,11 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">What is Workflow Anyway?</h1>
+      <h1 class="title">The Double-Edged Code: How Data Became Both Our Salvation and Our Undoing</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">data</div>
-                <div class="quarto-category">Python</div>
-                <div class="quarto-category">R</div>
-                <div class="quarto-category">Analysis</div>
+                <div class="quarto-category">philosophy</div>
+                <div class="quarto-category">code</div>
+                <div class="quarto-category">analysis</div>
               </div>
                   </div>
   </div>
@@ -139,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May 28, 2025</p>
+        <p class="date">May 15, 2025</p>
       </div>
     </div>
     
@@ -158,88 +157,59 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="what-is-workflow-anyway" class="level1">
-<h1><strong>What is Workflow Anyway?</strong></h1>
-<section id="a-software-development-term-that-is-often-used-and-just-as-often-misunderstood." class="level2">
-<h2 class="anchored" data-anchor-id="a-software-development-term-that-is-often-used-and-just-as-often-misunderstood.">A software development term that is often used and just as often misunderstood.</h2>
-<p>A <a href="https://www.nnlm.gov/guides/data-glossary/data-science#:~:text=Definition,knowledge%20or%20solving%20a%20problem.">data science</a> workflow is a structured, repeatable process for turning raw data into actionable insights, covering everything from data collection to communication. It ensures your work is organized, reproducible, and scalable. It is how you approach a defined task and preferably you are going to do it the same way every time. Although you may want to tweak and improve your way of doing things as circumstances dictate.</p>
-<p>If you’re going to be writing a lot of R code, or otherwise doing a lot of data analysis, it’s worth investing some time to plan and edit your basic workflow. This is because it tends to pay great [dividends](https://www.datascience-pm.com/data-science-workflow/#:~:text=Using%20a%20well%2Ddefined%20data%20science%20workflow%20is,done%20to%20do%20a%20data%20science%20project.&amp;text=Each%20phase%20(Business%20understanding%2C%20data%20understanding%2C%20data,of%20deliverables%20such%20as%20documentation%20and%20reports.) in the long run. It doesn’t just increase the proportion of your time spent writing code, but because you see the results more quickly, it makes the process of writing code more enjoyable, and helps your skills improve more quickly.</p>
-<p>Think of it as a way to get immediate feedback on your <a href="https://www.youtube.com/watch?v=1-sjUoGO250&amp;t=100s&amp;pp=ygUeZGVsaWJlcmF0ZSBwcmFjdGljZSBrbm93bGVkZ2Ug">deliberate practice</a>.</p>
-<p>Are you sold on the idea of at least having a rough outline of how you perform routine data analysis tasks? Great! <a href="https://www.youtube.com/shorts/EIk312jE8vw">Let’s gooo</a>…. I like to break nine well-known steps down into groups of three. Three phases of three, if that helps.</p>
-<ol type="1">
-<li><p>Plan, collect and clean</p></li>
-<li><p>Explore, model and validate</p></li>
-<li><p>Communicate, reproduce and deploy</p></li>
-</ol>
+<section id="what-is-complexity-well-it-is-not-complicated." class="level1">
+<h1><strong>What is Complexity? Well, It Is Not Complicated.</strong></h1>
+<section id="while-complex-and-complicated-are-often-used-interchangeably-the-differences-can-have-profound-implications-for-your-life." class="level2">
+<h2 class="anchored" data-anchor-id="while-complex-and-complicated-are-often-used-interchangeably-the-differences-can-have-profound-implications-for-your-life.">While “complex” and “complicated” are often used interchangeably, the differences can have profound implications for your life.</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="grine.jpg" class="img-fluid figure-img"></p>
+<figcaption>Teamwork can often lead to success solving both complicated and complex problems.</figcaption>
+</figure>
+</div>
+<p>In a world filled with challenges, knowing the difference between what is “complicated” and what is “complex” can be the key to solving problems more effectively. While the two words are often used interchangeably, they describe very different realities. As you approach dilemmas, you want to use the correct models to solve them. If you can define what you face as either “complicated” or “complex” then that is a positive step towards defining the problem as a whole.</p>
+<p>Complicated systems — like a software program— may be intricate but can be broken down, analyzed, repaired and improved. Complex systems — like climate patterns or human relationships — are dynamic, with several factors and unpredictable outcomes. Recognizing whether you’re dealing with a complicated task or a complex situation can shape your thinking. This recognition alerts to as to whether you need a manual (“complicated”), or a mindset (“complex”) that is ready to adapt and evolve.</p>
 </section>
 </section>
-<section id="plan-collect-clean" class="level1">
-<h1><strong>Plan, Collect, Clean</strong></h1>
-<p><strong>Planning</strong> begins with clearly defining the problem or question to be answered. This includes identifying the stakeholders, determining the data requirements, and mapping out a realistic timeline. A good plan ensures alignment between objectives and available resources, and helps avoid unnecessary data collection or redundant efforts.</p>
-<p><strong>Data collection</strong> involves gathering data from appropriate sources, which could include databases, APIs, surveys, sensors, or web scraping. This step requires careful documentation of data provenance, formats, and limitations. It’s important to ensure ethical and legal compliance, particularly when dealing with sensitive or personal information.</p>
-<p><strong>Cleaning</strong> is often the most time-consuming part of the workflow. Raw data is rarely ready for analysis; it may contain missing values, inconsistencies, outliers, or incorrect formats. Cleaning includes handling null values, standardizing units or categories, correcting data entry errors, and filtering irrelevant observations. Automation tools and scripts in R or Python are commonly used to streamline this process and maintain reproducibility.</p>
-</section>
-<section id="explore-model-validate" class="level1">
-<h1><strong>Explore, Model, Validate</strong></h1>
-<p><strong>Exploration</strong>, or exploratory data analysis (EDA), helps uncover patterns, trends, and relationships in the data. This involves generating summary statistics, visualizing distributions, and identifying correlations or clusters. Techniques like histograms, boxplots, scatterplots, and <a href="https://r-graph-gallery.com/heatmap">heatmaps</a> are commonly used. An EDA can also reveal hidden problems, such as multicollinearity (When two or more independent variables in a regression model are highly correlated, meaning they provide similar information about the relationship with the target variable) or skewed distributions, which inform modeling choices.</p>
-<p><strong>Modeling</strong> involves selecting and applying algorithms to make predictions or classifications based on the data. The choice of model — linear regression, decision trees, support vector machines, etc. — depends on the problem type (e.g., regression vs.&nbsp;classification) and the nature of the data. <a href="https://www.tmwr.org/recipes">Feature engineering</a>, selecting variables, and tuning hyperparameters are key parts of this phase. Good modeling aims to strike a balance between simplicity and performance.</p>
-<p><strong>Validation</strong> ensures the model’s reliability and generalizability. Techniques like cross-validation, train-test splits, and performance metrics (e.g., accuracy, <a href="https://www.rdocumentation.org/packages/Metrics/versions/0.1.4/topics/rmse">RMSE</a>, <a href="https://www.rdocumentation.org/packages/pROC/versions/1.18.5/topics/auc">AUC</a>) are used to assess how well the model performs on unseen data. Validation helps detect overfitting and underfitting and is critical before deploying a model in real-world applications.</p>
-</section>
-<section id="communicate-reproducibility-deployment" class="level1">
-<h1><strong>Communicate, Reproducibility, Deployment</strong></h1>
-<p><strong>Communication</strong> involves translating technical findings into clear, actionable insights for stakeholders. This can take the form of reports, dashboards, presentations, or interactive apps. Effective communication requires tailoring the message to the audience, focusing on key results, and using visuals to clarify complex ideas. Tools like <a href="https://www.tableau.com/">Tableau</a>, <a href="https://www.microsoft.com/en-us/power-platform/products/power-bi">Power BI</a>, or <a href="https://shiny.posit.co/">R Shiny</a> are often used to share insights dynamically. I prefer data storytelling because you have to elicit an emotion in order to stimulate action. I don’t enjoy conducting thorough analysis that is never utilized, and I assume you don’t either.</p>
-<p><strong>Reproducibility</strong> ensures that the entire analysis can be replicated by others or by your future self. This involves documenting code, version controlling with Git, and using consistent environments through tools like R-Studio projects, virtual environments, or <a href="https://www.docker.com/products/docker-hub/">Docker</a> containers. Reproducibility is essential for transparency, collaboration, and scientific rigor — especially in regulated or academic settings.</p>
-<p><strong>Deployment</strong> is the process of putting models or analysis outputs into a live environment where they can be used by others. This might include integrating a model into a web application, automating a data pipeline, or delivering scheduled reports. Deployment tools include <a href="https://flask.palletsprojects.com/">Flask</a>, APIs, cloud services (e.g., AWS, Azure), and platforms like <a href="https://posit.co/products/enterprise/connect/">Posit Connect</a>.</p>
-</section>
-<section id="a-data-science-workflow-in-practice" class="level1">
-<h1><strong>🧱 A Data Science Workflow in Practice</strong></h1>
-<p>Let’s outline the steps and include what happens as well as what tools and R packages you can use:</p>
-<ol type="1">
-<li><strong>Problem Framing:</strong> Define the question or hypothesis</li>
-</ol>
-<p>Notes, Notebooks, Google Drive, Google Docs, Google Collab</p>
-<p><strong>2. Data Collection:</strong> Get the data (APIs, CSVs, scraping, databases)</p>
-<p><code>httr</code>, <code>rvest</code>, <code>DBI</code>, <code>readr</code>, <code>googlesheets4</code></p>
-<p><strong>3. Data Cleaning / Wrangling:</strong> Tidy, filter, reshape, handle missing data</p>
-<p><code>dplyr</code>, <code>tidyr</code>, <code>janitor</code>, <code>lubridate</code></p>
-<p><strong>4. Exploratory Data Analysis (EDA):</strong> Summarize and visualize patterns</p>
-<p><code>ggplot2</code>, <code>skimr</code>, <code>corrplot</code>, <code>plotly</code></p>
-<p><strong>5. Modeling / Inference:</strong> Build models or run statistical tests</p>
-<p><code>caret</code>, <code>tidymodels</code>, <code>lm()</code>, <code>glm()</code>, <code>rstanarm</code></p>
-<p><strong>6. Validation:</strong> Check model performance or statistical assumptions</p>
-<p><code>yardstick</code>, <code>rsample</code>, residual plots</p>
-<p><strong>7. Communication:</strong> Create reports, dashboards, or apps</p>
-<p><code>rmarkdown</code>, <code>flexdashboard</code>, <code>shiny</code>, <code>gt</code></p>
-<p><strong>8. Deployment:</strong> Make it usable by others (web app, API, report)</p>
-<p><code>shinyapps.io</code>, <code>plumber</code>, <code>Docker</code>, <a href="https://github.com/">GitHub</a></p>
-<p><strong>9. Reproducibility &amp; Version Control:</strong> Track code, share data, automate workflows</p>
-<p><code>renv</code>, <code>targets</code>, <code>drake</code>, Git, <a href="https://github.com/">GitHub</a></p>
-</section>
-<section id="r-specific-workflow-best-practices" class="level1">
-<h1><strong>⚙️ R-Specific Workflow Best Practices</strong></h1>
+<section id="complicated" class="level1">
+<h1><strong>Complicated</strong></h1>
 <ul>
-<li><p>Use <strong>Tidyverse</strong> for wrangling and plotting (clean, readable code)</p></li>
-<li><p>Use <strong><code>projects</code></strong> and <strong><code>here::here()</code></strong> to manage paths</p></li>
-<li><p>Document code using <strong>R Markdown</strong></p></li>
-<li><p>Automate steps with <strong><code>targets</code></strong> or <strong><code>drake</code></strong></p></li>
-<li><p>Track packages with <strong><code>renv</code></strong></p></li>
+<li><p><strong>Can be hard to understand</strong>, but it <em>can</em> be figured out with enough effort.</p></li>
+<li><p>Usually has <strong>many parts</strong>, but those parts interact in <strong>predictable</strong> ways.</p></li>
+<li><p>Think of a <strong>car engine</strong>: lots of components, but mechanics can take it apart and put it back together because it follows a clear structure.</p></li>
+<li><p>Complicated systems can be good for a business because they take effort to replicate and can be routinely repaired with the proper analysis. Simply be careful when considering cost vs.&nbsp;benefit.</p></li>
 </ul>
 </section>
-<section id="azimuth-check" class="level1">
-<h1><strong>🧭 Azimuth Check:</strong></h1>
-<p>Pause and consider if this all makes sense to you. Further, think of a data science workflow like a <strong>recipe</strong>:</p>
+<section id="complex" class="level1">
+<h1><strong>Complex</strong></h1>
 <ul>
-<li><p>Ingredients = data</p></li>
-<li><p>Prep = wrangling/cleaning</p></li>
-<li><p>Cooking = modeling</p></li>
-<li><p>Tasting = validation</p></li>
-<li><p>Serving = communication</p></li>
-<li><p>Cook book= writing it all down so you can do it again (or share it)</p></li>
+<li><p>Involves <strong>many factors that interact in unpredictable or changing ways</strong>.</p></li>
+<li><p><strong>Can’t always be fully understood or controlled</strong>, even with lots of information. Family situations are often characterized as this.</p></li>
+<li><p>Think of a <strong>rainforest ecosystem</strong> or the <strong>stock market</strong>: small changes can lead to big, unexpected outcomes. Leverage also counts for a lot. Since inputs do not always equal outputs, you may want to play a complex game for higher returns on your effort. Naval Ravikant has great <a href="https://www.navalmanack.com/">advice</a> on leverage, and playing games in general. Nassim Taleb understands <a href="https://en.wikipedia.org/wiki/Antifragile_(book)">complex systems</a>, but be warned that his writing takes several reads to really sink in.</p></li>
 </ul>
+</section>
+<section id="more-practical-examples" class="level1">
+<h1><strong>More Practical Examples</strong></h1>
+<p>Let’s take a look across three familiar domains — technology, biology, and human behavior — to explore this distinction.</p>
+<section id="technology-building-vs.-managing" class="level2">
+<h2 class="anchored" data-anchor-id="technology-building-vs.-managing"><strong>Technology: Building vs.&nbsp;Managing</strong></h2>
+<p>Constructing a smartphone is a <em>complicated</em> task. It involves assembling thousands of components with precision. But there’s a blueprint, and with the right tools and expertise, the process is manageable and repeatable.</p>
+<p>Contrast that with running a social media platform. This is <em>complex</em>. User behavior, algorithm design, viral content, and misinformation all interact in unpredictable ways. What works one day may backfire the next, and no single fix can guarantee success. It’s a system in constant flux, requiring adaptation and learning rather than strict control.</p>
+</section>
+<section id="biology-structures-vs.-systems" class="level2">
+<h2 class="anchored" data-anchor-id="biology-structures-vs.-systems"><strong>Biology: Structures vs.&nbsp;Systems</strong></h2>
+<p>The human skeletal system is an example of a <em>complicated</em> biological structure. It can be mapped, understood, and repaired using established knowledge and tools.</p>
+<p>The immune system, however, is <em>complex</em>. It doesn’t just respond to threats in a linear fashion — it adapts, remembers, and sometimes misfires. Interactions with diet, stress, pathogens, and genetics create a living system that’s difficult to predict and even harder to fully master.</p>
+</section>
+<section id="human-behavior-tasks-vs.-relationships" class="level2">
+<h2 class="anchored" data-anchor-id="human-behavior-tasks-vs.-relationships"><strong>Human Behavior: Tasks vs.&nbsp;Relationships</strong></h2>
+<p>Filing your taxes may be a pain, but it’s <em>complicated</em>, not complex. The forms and rules are detailed, but with enough effort — or a good accountant — you can get through it.</p>
+<p>Raising a teenager, on the other hand, is <em>complex</em>. Emotions, peer influence, development stages, and communication all mix in unique ways for each child. There’s no manual, and what works one day might fail the next. It’s an evolving relationship that demands empathy, flexibility, and patience.</p>
+</section>
 </section>
 <section id="final-thoughts" class="level1">
 <h1><strong>Final Thoughts</strong></h1>
-<p>Workflows are comprised of how you methodically solve problems. At some point you may have to readjust and go back and do a single step or a whole phase over. For example, if you start modeling, and you realize you don’t have enough data then you clearly have to collect more. This is normal because life isn’t perfect. There are more tools that exist to assist you in your workflow, such as <a href="https://www.appsilon.com/post/6-benefits-of-r-targets-for-data-science-workflows"><code>targets</code></a>. Finally, your workflow also includes debugging. Approach your debugging with deliberate purpose, and you will find that get more positive outcomes.</p>
+<p>Recognizing whether you’re facing a complicated or complex challenge is more than a semantic exercise — it can help you choose the right strategy. When things are complicated, bring in experts, follow instructions, and rely on logic. When they’re complex, step back, observe patterns, and be ready to adapt. Knowing the difference just might change the way you solve problems forever.</p>
 
 
 </section>
