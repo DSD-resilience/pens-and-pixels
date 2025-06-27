@@ -1,5 +1,5 @@
 ---
-title: "The Double-Edged Code: How Data Became Both Our Salvation and Our Undoing"
+title: "What is Complexity? Well, It Is Not Complicated."
 author: "John T. Miller"
 date: "2025-05-15"
 categories: [philosophy, code, analysis]
