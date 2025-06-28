@@ -84,6 +84,118 @@
     "text": "Human Behavior: Tasks vs. Relationships\nFiling your taxes may be a pain, but it’s complicated, not complex. The forms and rules are detailed, but with enough effort — or a good accountant — you can get through it.\nRaising a teenager, on the other hand, is complex. Emotions, peer influence, development stages, and communication all mix in unique ways for each child. There’s no manual, and what works one day might fail the next. It’s an evolving relationship that demands empathy, flexibility, and patience."
   },
   {
+    "objectID": "posts/new-and-improved-R-4.5/index.html",
+    "href": "posts/new-and-improved-R-4.5/index.html",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "",
+    "text": "R 4.5 (released April 2025) brings performance, memory, and developer usability enhancements. Cool use cases include faster large data manipulation, enhanced reproducibility via random number generation, and better developer experience through enriched C-level introspection and string handling. It benefits tidyverse-heavy workflows, high-performance simulations, and package development.\nHere’s a breakdown of some cool use cases unlocked or improved by R 4.5 and how you can apply them in real-world workflows:"
+  },
+  {
+    "objectID": "posts/new-and-improved-R-4.5/index.html#r-makes-you-money-and-saves-you-time.-why-not-upgrade-your-r-game",
+    "href": "posts/new-and-improved-R-4.5/index.html#r-makes-you-money-and-saves-you-time.-why-not-upgrade-your-r-game",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "",
+    "text": "R 4.5 (released April 2025) brings performance, memory, and developer usability enhancements. Cool use cases include faster large data manipulation, enhanced reproducibility via random number generation, and better developer experience through enriched C-level introspection and string handling. It benefits tidyverse-heavy workflows, high-performance simulations, and package development.\nHere’s a breakdown of some cool use cases unlocked or improved by R 4.5 and how you can apply them in real-world workflows:"
+  },
+  {
+    "objectID": "posts/new-and-improved-R-4.5/index.html#upgrade",
+    "href": "posts/new-and-improved-R-4.5/index.html#upgrade",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "Upgrade:",
+    "text": "Upgrade:\n\nR 4.5 enhances random number generation (RNG) seeding and reproducibility in parallel environments (like future, parallel, foreach)."
+  },
+  {
+    "objectID": "posts/new-and-improved-R-4.5/index.html#use-case",
+    "href": "posts/new-and-improved-R-4.5/index.html#use-case",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "Use case:",
+    "text": "Use case:\n\nTry running thousands of Monte Carlo simulations or cross-validations in parallel using {furrr} or {doParallel} with consistent RNG across sessions.\n\nset.seed(42, kind = \"L'Ecuyer-CMRG\")  # Better for parallel RNG"
+  },
+  {
+    "objectID": "posts/new-and-improved-R-4.5/index.html#upgrade-1",
+    "href": "posts/new-and-improved-R-4.5/index.html#upgrade-1",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "Upgrade:",
+    "text": "Upgrade:\n\nThere are speed gains in low-level vector operations and memory usage, thanks to tighter internal memory allocations and improved hashing."
+  },
+  {
+    "objectID": "posts/new-and-improved-R-4.5/index.html#use-case-1",
+    "href": "posts/new-and-improved-R-4.5/index.html#use-case-1",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "Use case:",
+    "text": "Use case:\n\nLarge tidyverse data pipelines now run faster with less RAM overhead, especially when chaining dplyr and purrr operations on big datasets (e.g., millions of rows).\n\nlibrary(dplyr) big_data %&gt;%   group_by(group_var) %&gt;%   summarize(mean_val = mean(value), .groups = 'drop')"
+  },
+  {
+    "objectID": "posts/new-and-improved-R-4.5/index.html#upgrade-2",
+    "href": "posts/new-and-improved-R-4.5/index.html#upgrade-2",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "Upgrade:",
+    "text": "Upgrade:\n\nNow, new and improved (!) nchar(), substr(), and string encoding support across OSes."
+  },
+  {
+    "objectID": "posts/new-and-improved-R-4.5/index.html#use-case-2",
+    "href": "posts/new-and-improved-R-4.5/index.html#use-case-2",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "Use case:",
+    "text": "Use case:\n\nText mining and NLP tasks (especially on multilingual data) using {stringr} or {stringi} have fewer encoding bugs and cleaner Unicode handling.\n\nlibrary(stringr) str_length(\"😊你好\")  # Accurate across locales"
+  },
+  {
+    "objectID": "posts/new-and-improved-R-4.5/index.html#upgrade-3",
+    "href": "posts/new-and-improved-R-4.5/index.html#upgrade-3",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "Upgrade:",
+    "text": "Upgrade:\n\nNew API for internal function calls and better support for C/C++-based extensions. C++ is used for everything from web browsers to robotic automation."
+  },
+  {
+    "objectID": "posts/new-and-improved-R-4.5/index.html#use-case-3",
+    "href": "posts/new-and-improved-R-4.5/index.html#use-case-3",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "Use case:",
+    "text": "Use case:\n\nFor developers writing high-performance R packages in C++, integration is smoother, safer, and more debuggable (great for {Rcpp} devs).\n\n// Better .Call() introspection from R side"
+  },
+  {
+    "objectID": "posts/new-and-improved-R-4.5/index.html#upgrade-4",
+    "href": "posts/new-and-improved-R-4.5/index.html#upgrade-4",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "Upgrade:",
+    "text": "Upgrade:\n\nBetter stack traces and error source tracking in base R."
+  },
+  {
+    "objectID": "posts/new-and-improved-R-4.5/index.html#use-case-4",
+    "href": "posts/new-and-improved-R-4.5/index.html#use-case-4",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "Use case:",
+    "text": "Use case:\n\nEasier debugging of deeply nested tidyverse or {targets} workflows.\n\noptions(error = utils::recover)  # Now shows better tracebacks"
+  },
+  {
+    "objectID": "posts/new-and-improved-R-4.5/index.html#upgrade-5",
+    "href": "posts/new-and-improved-R-4.5/index.html#upgrade-5",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "Upgrade:",
+    "text": "Upgrade:\n\nImproved forking behavior, lower memory duplication."
+  },
+  {
+    "objectID": "posts/new-and-improved-R-4.5/index.html#use-case-5",
+    "href": "posts/new-and-improved-R-4.5/index.html#use-case-5",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "Use case:",
+    "text": "Use case:\n\nParallel backends like {parallel}, {future}, {multidplyr} now waste less RAM when duplicating large objects across workers."
+  },
+  {
+    "objectID": "posts/new-and-improved-R-4.5/index.html#upgrade-6",
+    "href": "posts/new-and-improved-R-4.5/index.html#upgrade-6",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "Upgrade:",
+    "text": "Upgrade:\n\n|&gt; gains improved handling of side-effects and evaluation."
+  },
+  {
+    "objectID": "posts/new-and-improved-R-4.5/index.html#use-case-6",
+    "href": "posts/new-and-improved-R-4.5/index.html#use-case-6",
+    "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
+    "section": "Use case:",
+    "text": "Use case:\n\nYou can now safely replace many %&gt;% chains with |&gt; in lighter base workflows.\n\niris |&gt;   subset(Species == \"setosa\") |&gt;   head()\nIf you share your current use case or type of work (e.g., modeling, dashboards, NLP, simulations) in the comments, then I can show you how R 4.5 specifically makes your code cleaner, faster, or safer.\nNick Tierney provides more details about R 4.5.0 here in his R blog. Overall, this is exciting news and likely not the last article I write on the fantastic advancements being made in R."
+  },
+  {
     "objectID": "posts/change-columns/index.html#take-the-data-mutate-it-by-naming-a-new-column-then-define-how-its-changed.",
     "href": "posts/change-columns/index.html#take-the-data-mutate-it-by-naming-a-new-column-then-define-how-its-changed.",
     "title": "Easily Create and Change Columns in Your Data",
@@ -116,6 +228,6 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "I help people understand and use data models. Some of my favorite subjects to write about include data, technology and human affairs.\nOne effective structure for online content is provide an overview of the problem, then contrast it with the perfect endstate or a positive vision of the future. Finally, provide a step-by-step solution that gets your reader from the problem to the endstate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinear Regression for Gentle Souls\n\n\n\nR\n\ncode\n\nregression\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 17, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nThe Double-Edged Code: How Data Became Both Our Salvation and Our Undoing\n\n\n\nphilosophy\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 9, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is Workflow Anyway?\n\n\n\ndata\n\nPython\n\nR\n\nAnalysis\n\n\n\n\n\n\n\n\n\nMay 28, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is Complexity? Well, It Is Not Complicated.\n\n\n\nphilosophy\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 15, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nEasily Create and Change Columns in Your Data\n\n\n\nR\n\ncode\n\ndplyr\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 12, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nDad Bod Be Gone\n\n\n\nfitness\n\nhealth\n\nanalysis\n\n\n\n\n\n\n\n\n\nDec 28, 2022\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nBuild a Data Science Business\n\n\n\nR\n\nPython\n\nData\n\n\n\n\n\n\n\n\n\nAug 24, 2022\n\n\nJohn T. Miller\n\n\n\n\n\nNo matching items"
+    "text": "I help people understand and use data models. Some of my favorite subjects to write about include data, technology and human affairs.\nOne effective structure for online content is provide an overview of the problem, then contrast it with the perfect endstate or a positive vision of the future. Finally, provide a step-by-step solution that gets your reader from the problem to the endstate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinear Regression for Gentle Souls\n\n\n\nR\n\ncode\n\nregression\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 17, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nThe Double-Edged Code: How Data Became Both Our Salvation and Our Undoing\n\n\n\nphilosophy\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 9, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is Workflow Anyway?\n\n\n\ndata\n\nPython\n\nR\n\nAnalysis\n\n\n\n\n\n\n\n\n\nMay 28, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is Complexity? Well, It Is Not Complicated.\n\n\n\nphilosophy\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 15, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nEasily Create and Change Columns in Your Data\n\n\n\nR\n\ncode\n\ndplyr\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 12, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nA New and Improved R: Cool Use Cases of R 4.5.0 Upgrades\n\n\n\nR\n\ncode\n\nstatistics\n\n\n\n\n\n\n\n\n\nApr 19, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nDad Bod Be Gone\n\n\n\nfitness\n\nhealth\n\nanalysis\n\n\n\n\n\n\n\n\n\nDec 28, 2022\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nBuild a Data Science Business\n\n\n\nR\n\nPython\n\nData\n\n\n\n\n\n\n\n\n\nAug 24, 2022\n\n\nJohn T. Miller\n\n\n\n\n\nNo matching items"
   }
 ]
