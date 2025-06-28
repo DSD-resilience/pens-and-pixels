@@ -37,7 +37,7 @@ A simple way to remember the parts of the `mutate()` function in `dplyr` is to u
 
 You can also think of it as:
 
-``` R
+``` r
 mutate(data, new_column = transformation_of_existing_column)
 ```
 
@@ -83,7 +83,7 @@ A great use case for modifying your variables if you need to efficiently change 
 
 # **Using `mutate( )` with Conditional Logic**
 
-``` R
+``` r
 df <- df %>% mutate(category = ifelse(BMI > 25, "Overweight", "Normal"))
 ```
 

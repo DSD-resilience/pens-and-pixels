@@ -3,7 +3,7 @@ title: "What is Workflow Anyway?"
 slug: "my-newer-post2"
 author: "John T. Miller"
 date: "2025-05-28"
-categories: [data, Python, R, Analysis]
+categories: [data, Python, R, analysis]
 image: "image2.jpg"
 ---
 
