@@ -84,6 +84,27 @@
     "text": "Human Behavior: Tasks vs. Relationships\nFiling your taxes may be a pain, but it’s complicated, not complex. The forms and rules are detailed, but with enough effort — or a good accountant — you can get through it.\nRaising a teenager, on the other hand, is complex. Emotions, peer influence, development stages, and communication all mix in unique ways for each child. There’s no manual, and what works one day might fail the next. It’s an evolving relationship that demands empathy, flexibility, and patience."
   },
   {
+    "objectID": "posts/another post-with-code/index.html",
+    "href": "posts/another post-with-code/index.html",
+    "title": "Peak Shiny Performance",
+    "section": "",
+    "text": "Professional software developers think about not only initial execution but performance optimization. It is part of your journey of being one of the best in your field. There are several ways to do this for an app. Some of these ways include: minimizing the number of computations, using efficient data structures and algorithms, properly caching your data, and optimizing image and file sizes. This article touches on these subjects as they relate to Shiny, one of the best web app development tools available.\nR Shiny has a certain amount of popularity for building interactive web applications, especially in the data science and analytics space. Therefore, developers constantly face the challenge of scaling and optimizing performance. While Shiny is intuitive and productive for creating prototypes, deploying apps for broader audiences or handling large datasets demands a more deliberate focus on performance tuning.\nLet’s explore key techniques and best practices that web developers can use to achieve peak performance with Shiny apps, covering front-end and back-end considerations, efficient coding strategies, and deployment tips."
+  },
+  {
+    "objectID": "posts/another post-with-code/index.html#dont-just-make-apps-that-work.-make-apps-that-work-better.",
+    "href": "posts/another post-with-code/index.html#dont-just-make-apps-that-work.-make-apps-that-work-better.",
+    "title": "Peak Shiny Performance",
+    "section": "",
+    "text": "Professional software developers think about not only initial execution but performance optimization. It is part of your journey of being one of the best in your field. There are several ways to do this for an app. Some of these ways include: minimizing the number of computations, using efficient data structures and algorithms, properly caching your data, and optimizing image and file sizes. This article touches on these subjects as they relate to Shiny, one of the best web app development tools available.\nR Shiny has a certain amount of popularity for building interactive web applications, especially in the data science and analytics space. Therefore, developers constantly face the challenge of scaling and optimizing performance. While Shiny is intuitive and productive for creating prototypes, deploying apps for broader audiences or handling large datasets demands a more deliberate focus on performance tuning.\nLet’s explore key techniques and best practices that web developers can use to achieve peak performance with Shiny apps, covering front-end and back-end considerations, efficient coding strategies, and deployment tips."
+  },
+  {
+    "objectID": "posts/change-columns/index.html#take-the-data-mutate-it-by-naming-a-new-column-then-define-how-its-changed.",
+    "href": "posts/change-columns/index.html#take-the-data-mutate-it-by-naming-a-new-column-then-define-how-its-changed.",
+    "title": "Easily Create and Change Columns in Your Data",
+    "section": "“Take the data, mutate it by naming a new column, then define how it’s changed.”",
+    "text": "“Take the data, mutate it by naming a new column, then define how it’s changed.”\npenguins %&gt;%   mutate(body_mass_kg = body_mass_g / 1000)\n\npenguins is your data\nbody_mass_kg is the new column\n= body_mass_g / 1000 is how to create it\n\n\nD-N-E-C: “Don’t Neglect Essential Columns”\n\nWhere D means Data penguins %&gt;% , and N means New column name, body_mass_kg , E is Equals = or &lt;- and C is Change (transformation) body_mass_g / 1000"
+  },
+  {
     "objectID": "posts/new-and-improved-R-4.5/index.html",
     "href": "posts/new-and-improved-R-4.5/index.html",
     "title": "A New and Improved R: Cool Use Cases of R 4.5.0 Upgrades",
@@ -196,13 +217,6 @@
     "text": "Use case:\n\nYou can now safely replace many %&gt;% chains with |&gt; in lighter base workflows.\n\niris |&gt;   subset(Species == \"setosa\") |&gt;   head()\nIf you share your current use case or type of work (e.g., modeling, dashboards, NLP, simulations) in the comments, then I can show you how R 4.5 specifically makes your code cleaner, faster, or safer.\nNick Tierney provides more details about R 4.5.0 here in his R blog. Overall, this is exciting news and likely not the last article I write on the fantastic advancements being made in R."
   },
   {
-    "objectID": "posts/change-columns/index.html#take-the-data-mutate-it-by-naming-a-new-column-then-define-how-its-changed.",
-    "href": "posts/change-columns/index.html#take-the-data-mutate-it-by-naming-a-new-column-then-define-how-its-changed.",
-    "title": "Easily Create and Change Columns in Your Data",
-    "section": "“Take the data, mutate it by naming a new column, then define how it’s changed.”",
-    "text": "“Take the data, mutate it by naming a new column, then define how it’s changed.”\npenguins %&gt;%   mutate(body_mass_kg = body_mass_g / 1000)\n\npenguins is your data\nbody_mass_kg is the new column\n= body_mass_g / 1000 is how to create it\n\n\nD-N-E-C: “Don’t Neglect Essential Columns”\n\nWhere D means Data penguins %&gt;% , and N means New column name, body_mass_kg , E is Equals = or &lt;- and C is Change (transformation) body_mass_g / 1000"
-  },
-  {
     "objectID": "posts/linear-regression-with-code/index.html",
     "href": "posts/linear-regression-with-code/index.html",
     "title": "Linear Regression for Gentle Souls",
@@ -228,6 +242,6 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "I help people understand and use data models. Some of my favorite subjects to write about include data, technology and human affairs.\nOne effective structure for online content is provide an overview of the problem, then contrast it with the perfect endstate or a positive vision of the future. Finally, provide a step-by-step solution that gets your reader from the problem to the endstate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinear Regression for Gentle Souls\n\n\n\nR\n\ncode\n\nregression\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 17, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nThe Double-Edged Code: How Data Became Both Our Salvation and Our Undoing\n\n\n\nphilosophy\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 9, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is Workflow Anyway?\n\n\n\ndata\n\nPython\n\nR\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 28, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is Complexity? Well, It Is Not Complicated.\n\n\n\nphilosophy\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 15, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nEasily Create and Change Columns in Your Data\n\n\n\nR\n\ncode\n\ndplyr\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 12, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nA New and Improved R: Cool Use Cases of R 4.5.0 Upgrades\n\n\n\nR\n\ncode\n\nstatistics\n\n\n\n\n\n\n\n\n\nApr 19, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nDad Bod Be Gone\n\n\n\nfitness\n\nhealth\n\nanalysis\n\n\n\n\n\n\n\n\n\nDec 28, 2022\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nBuild a Data Science Business\n\n\n\nR\n\nPython\n\ndata\n\n\n\n\n\n\n\n\n\nAug 24, 2022\n\n\nJohn T. Miller\n\n\n\n\n\nNo matching items"
+    "text": "I help people understand and use data models. Some of my favorite subjects to write about include data, technology and human affairs.\nOne effective structure for online content is provide an overview of the problem, then contrast it with the perfect endstate or a positive vision of the future. Finally, provide a step-by-step solution that gets your reader from the problem to the endstate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinear Regression for Gentle Souls\n\n\n\nR\n\ncode\n\nregression\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 17, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nThe Double-Edged Code: How Data Became Both Our Salvation and Our Undoing\n\n\n\nphilosophy\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 9, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is Workflow Anyway?\n\n\n\ndata\n\nPython\n\nR\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 28, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is Complexity? Well, It Is Not Complicated.\n\n\n\nphilosophy\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 15, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nEasily Create and Change Columns in Your Data\n\n\n\nR\n\ncode\n\ndplyr\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 12, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nA New and Improved R: Cool Use Cases of R 4.5.0 Upgrades\n\n\n\nR\n\ncode\n\nstatistics\n\n\n\n\n\n\n\n\n\nApr 19, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nPeak Shiny Performance\n\n\n\nR\n\ncode\n\nweb apps\n\n\n\n\n\n\n\n\n\nApr 19, 2025\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nDad Bod Be Gone\n\n\n\nfitness\n\nhealth\n\nanalysis\n\n\n\n\n\n\n\n\n\nDec 28, 2022\n\n\nJohn T. Miller\n\n\n\n\n\n\n\n\n\n\n\n\nBuild a Data Science Business\n\n\n\nR\n\nPython\n\ndata\n\n\n\n\n\n\n\n\n\nAug 24, 2022\n\n\nJohn T. Miller\n\n\n\n\n\nNo matching items"
   }
 ]
