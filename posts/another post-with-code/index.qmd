@@ -1,0 +1,155 @@
+---
+title: "Peak Shiny Performance"
+author: "John T. Miller"
+date: "2025-04-19"
+categories: [R, code, web apps]
+image: "image.jpg"
+---
+
+# **Peak Shiny Performance**
+
+## Don’t just make apps that work. Make apps that work better.
+
+![](pexels-anna-nekrashevich-7552374.jpg)
+
+Professional software developers think about not only initial execution but performance optimization. It is part of your journey of being one of the best in your field. There are several ways to do this for an app. Some of these ways include: minimizing the number of computations, using efficient data structures and algorithms, properly caching your data, and optimizing image and file sizes. This article touches on these subjects as they relate to [Shiny](https://shiny.posit.co/), one of the best web app development tools available.
+
+[R Shiny](https://shiny.posit.co/) has a certain amount of popularity for building interactive web applications, especially in the data science and analytics space. Therefore, developers constantly face the challenge of scaling and optimizing performance. While Shiny is intuitive and productive for creating prototypes, deploying apps for broader audiences or handling large datasets demands a more deliberate focus on performance tuning.
+
+Let’s explore key techniques and best practices that web developers can use to achieve peak performance with Shiny apps, covering front-end and back-end considerations, efficient coding strategies, and deployment tips.
+
+# **1. Optimize Reactive Programming**
+
+Reactive expressions are central to how Shiny works. As inputs change, outputs are updated on the spot. However, careless use of `reactive()`, `observe()`, and `render*()` functions can quickly lead to inefficient re-execution of code or redundant rendering.
+
+# **Best Practices:**
+
+-   **Use `reactive()` to cache calculations.** If you have computations that are reused in multiple places, compute them once inside a reactive expression.
+
+-   **Be specific in reactivity.** Avoid wrapping large blocks of logic in `reactive()` or `observe()` if only a small piece depends on user input.
+
+-   **Use `isolate()` when needed.** If you want to delay reactivity until a button is pressed, wrap expressions in `isolate()` to prevent premature updates.
+
+-   **Debounce frequent updates.** For fast-changing inputs like sliders or text inputs, use `debounce()` or `throttle()` from the `shiny` package to reduce unnecessary re-execution.
+
+# **2. Profile Your App**
+
+The `shiny::reactlog` and `profvis` tools are indispensable for analyzing performance bottlenecks.
+
+-   **`reactlog::reactlog_enable()`** shows how reactive values are connected. This helps detect circular dependencies or unintended invalidations.
+
+-   **`profvis`** offers a flame graph to visualize time spent in various parts of the app, making it easy to identify slow blocks.
+
+Running profiling early and often during development can help you identify inefficiencies that might not be obvious in smaller datasets or when running locally.
+
+# **3. Minimize Data Processing During Runtime**
+
+One of the most common performance issues in Shiny apps is unnecessary data wrangling at runtime. Repetitive filtering, joining, or transforming datasets inside `render*()` blocks can slow down the app considerably.
+
+# **Solutions:**
+
+-   **Preprocess data upfront.** Move expensive computations outside of reactivity wherever possible. For static datasets, consider storing processed results in `.rds` files or databases.
+
+-   **Use lightweight data formats.** Compress your datasets before loading them into memory, and consider reading only relevant columns (`select()`) or rows (`filter()`) as needed.
+
+-   **Leverage efficient libraries.** Packages like `data.table` and `arrow` can handle large datasets faster than traditional `data.frame` or `dplyr`.
+
+# **4. Use Modularization for Clarity and Speed**
+
+Shiny modules (`moduleUI()` and `moduleServer()`) are not just for code organization—they can also improve performance by isolating reactivity.
+
+-   **Modules scope reactivity.** This limits the potential for reactive cascades across unrelated parts of the app.
+
+-   **Lazy evaluation.** You can design modules to load only when needed, reducing load time and memory footprint.
+
+Large apps especially benefit from modular architecture both in terms of user experience and maintainability.
+
+# **5. Optimize UI Rendering**
+
+Frontend performance is equally important. Bloated UIs with excessive inputs, outputs, or plots can significantly degrade responsiveness.
+
+# **Tips:**
+
+-   **Render only what’s needed.** Use `conditionalPanel()` or `tabsetPanel()` with `renderUI()` to defer rendering of UI components until the user accesses them.
+
+-   **Use lightweight widgets.** Instead of full-blown HTML tables, use packages like `DT` or `reactable` which support pagination, lazy loading, and client-side sorting.
+
+-   **Avoid unnecessary observers.** Don’t use `observeEvent()` if the only purpose is to update UI based on inputs—consider binding input logic directly with `update*()` functions.
+
+-   **Apply CSS/JS selectively.** Custom JavaScript and CSS should be scoped and lean to avoid bloating the DOM or blocking UI rendering.
+
+# **6. Asynchronous Programming with `future` and `promises`**
+
+For computationally intensive tasks, blocking the main R process will freeze the UI. Offloading such tasks using asynchronous programming is key to smooth interaction.
+
+# **Tools:**
+
+-   **`future` + `promises`**: Wrap long-running tasks like model training, large file uploads, or report generation in a `future()` call and use `then()` to handle results asynchronously.
+
+-   **`shinycssloaders`** or spinner indicators: Let the user know that background processing is underway.
+
+Example:
+
+```         
+future({   long_computation() }) %...>%    then(function(result) {     output$plot <- renderPlot({ plot(result) })   })
+```
+
+# **7. Use Caching for Repeat Users**
+
+Shiny supports caching at multiple levels:
+
+-   **Reactive caching** with `memoise` for computations.
+
+-   **File caching** for static images, preprocessed data, or API responses.
+
+-   **Browser caching** for static assets (CSS, JS, images).
+
+Caching helps return results instantly for repeat interactions, particularly useful for dashboard apps with recurring users.
+
+# **8. Deploy with Production-Grade Infrastructure**
+
+Using `shinyapps.io` is fine for prototypes, and you can find how to use it [here](https://medium.com/@datascientistdude/deploying-and-hosting-a-shiny-app-on-shinyapps-io-a-complete-guide-ce54c8127ed8). However, for performance and scaling, consider:
+
+-   **RStudio Connect**: Enterprise-grade deployment with scheduled reports, authentication, and performance monitoring.
+
+-   **Docker + Shiny Server Open Source**: Containerized deployment with full control over infrastructure.
+
+-   **Load balancing with `nginx` or `haproxy`**: Supports high-availability and load distribution across multiple app instances.
+
+As you get bigger, experiment and see which one works best for your situation and client needs. Use health checks, automatic restarts, and monitoring tools (like `prometheus`, `grafana`, or `plumber`) to maintain performance under production workloads.
+
+# **9. Memory Management and Garbage Collection**
+
+Memory leaks and bloated sessions can crash Shiny apps or exhaust server resources.
+
+# **Prevention:**
+
+-   **Limit session memory.** Explicitly remove large objects after use with `rm()` and call `gc()` to trigger garbage collection.
+
+-   **Session-specific data.** Avoid global variables that grow over time or store per-user data globally.
+
+-   **Use `session$onSessionEnded()`** to clean up temporary files or connections.
+
+# **10. Monitor and Scale**
+
+Real-time monitoring is vital. Use various tools to observe:
+
+-   **Number of active sessions**
+
+-   **CPU/memory usage**
+
+-   **App-specific logs and error tracking**
+
+On platforms like [RStudio Connect](https://posit.co/resources/videos/what-is-rstudio-connect/), you can define per-app resource limits or autoscaling thresholds. This ensures that high-traffic doesn’t overwhelm your server.
+
+# **Final Thoughts**
+
+Optimizing Shiny apps for peak performance is both an art and a science. It requires a balanced approach — understanding reactive programming, writing efficient code, handling data smartly, and deploying on robust infrastructure. As your apps scale from a few users to enterprise-wide dashboards or public-facing platforms, performance tuning becomes a critical part of the development lifecycle.
+
+Samuel Calderon discussed optimizing Shiny apps for three hours (with practical exercises too!) at [ShinyConf](https://www.shinyconf.com/) in April 2025. If you sign in with the Appsilon website, you should be able to watch the video replay of that and other presentations until April 2026. Separately, Andrew Couch talks about how to optimize perfomance in a Shiny dashboard for twenty minutes [here](http://samuel%20calderon%20optimizing%20performance%20in%20shiny/).
+
+Whether you’re a solo developer, part of a data science team, or offering Shiny apps as a freelance service, following these best practices will help you deliver responsive, scalable, and user-friendly applications.
+
+# **Connect with me**
+
+-   [**GitHub**](https://github.com/DSD-resilience)**,** [**LinkedIn**](https://www.linkedin.com/in/john-t-miller/), [**Instagram**](https://www.instagram.com/datascientistdude/?hl=en) **:** fair warning, I mostly use my Insta to post funny memes each day. Have fun using Shiny — ciao!
