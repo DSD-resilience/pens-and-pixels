@@ -7,11 +7,11 @@ categories: [data, Python, R, analysis]
 image: "image2.jpg"
 ---
 
+![](images/clipboard-2438677497.jpeg)
+
 # **What is Workflow Anyway?**
 
 ## A software development term that is often used and just as often misunderstood.
-
-![](a-chosen-soul-XF_akvv9pgU-unsplash.jpg)
 
 A [data science](https://www.nnlm.gov/guides/data-glossary/data-science#:~:text=Definition,knowledge%20or%20solving%20a%20problem.) workflow is a structured, repeatable process for turning raw data into actionable insights, covering everything from data collection to communication. It ensures your work is organized, reproducible, and scalable. It is how you approach a defined task and preferably you are going to do it the same way every time. Although you may want to tweak and improve your way of doing things as circumstances dictate.
 
