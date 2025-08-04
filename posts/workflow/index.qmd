@@ -1,5 +1,5 @@
 ---
-title: "What is Workflow Anyway?"
+title: "Neural Networks?"
 slug: "my-newer-post2"
 author: "John T. Miller"
 date: "2025-05-28"
