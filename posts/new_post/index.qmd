@@ -1,9 +1,9 @@
 ---
-title: "Dad"
-slug: "Implementing_Linear"
+title: "Learning Python After 50"
+slug: "Python-after-50"
 author: "John T. Miller"
-date: "2022-12-28"
-categories: [fitness, health, analysis]
+date: "2025-07-28"
+categories: [python, data, analysis]
 image: "image2.jpg"
 ---
 
@@ -187,3 +187,5 @@ Paste the result into [Replit](https://replit.com/), hit “Run,” and tweak it
 You’ve just written your first real Python program.
 
 Welcome to the club.
+
+![You are loved.](image_over-50.jpg)
