@@ -21,7 +21,7 @@ Let’s walk through how someone 50+ can learn Python step by step — and why y
 
 ### **Why Learn Python After 50?**
 
-You might not be looking to launch a new tech career — and that’s totally fine.
+You might not be looking to launch a completely new tech career — and that’s totally fine.
 
 There are plenty of other great reasons to learn Python after 50:
 
