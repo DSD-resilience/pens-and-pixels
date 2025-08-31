@@ -2,7 +2,7 @@
 title: "Learning Python After 50"
 slug: "Python-after-50"
 author: "John T. Miller"
-date: "2025-07-28"
+date: "2025-07-21"
 categories: [python, data, analysis]
 image: "image2.jpg"
 ---
