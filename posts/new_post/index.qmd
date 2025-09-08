@@ -33,7 +33,7 @@ There are plenty of other great reasons to learn Python after 50:
 
 ### **The Myth of “Too Late”**
 
-You don’t need to be a 22-year-old with a hoodie and a Red Bull. You need **curiosity**, **patience**, and a bit of help.
+You don’t need to be a 22-year-old hacker with a hoodie and a Red Bull. You need **curiosity**, **patience**, and **a bit of help**.
 
 The truth is:
 
