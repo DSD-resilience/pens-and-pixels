@@ -53,7 +53,7 @@ Imagine being able to:
 
 -   Understand errors without frustration
 
-That’s what AI tools like [**ChatGPT**](https://chatgpt.com/) or [**Replit Ghostwriter**](https://replit.com/learn/intro-to-ghostwriter) do. It’s like learning to drive with GPS guidance — no need to memorize every street. During the “olden days” you might have to, and still to some degree, look up errors on [Stack Overflow](https://stackoverflow.com/). LLMs are only getting better and can usually explain your error in plain English.
+That’s what AI tools like [**ChatGPT**](https://chatgpt.com/) or [**Replit Ghostwriter**](https://replit.com/learn/intro-to-ghostwriter) do. It’s like learning to drive with GPS guidance — no need to memorize every street or intersection. During the “olden days” you might have to, and still to some degree, look up errors on [Stack Overflow](https://stackoverflow.com/). LLMs are only getting better and can usually explain your error in plain English.
 
 You don’t even have to use ChatGPT; the fact is that many models are good. [Google Gemini](https://gemini.google.com/app) is an example. As you get better at coding you will find that free storage sites for coders like [Git Hub](https://github.com/) also have AI built in or offered as a premium option.
 
