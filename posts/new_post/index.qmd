@@ -87,7 +87,7 @@ Learning is easier when it’s *personal*.
 
 -   [FreeCodeCamp Python](https://www.freecodecamp.org/learn/) (disclaimer: I love FreeCodeCamp and it is a non-profit worthy of your support.)
 
--   [Automate the Boring Stuff (book)](https://automatetheboringstuff.com/) (No affiliate link because they don’t need it, this book is amazing.)
+-   [Automate the Boring Stuff (book)](https://automatetheboringstuff.com/) (No affiliate link because they don’t need it, this book is amazing as many will attest.)
 
 ### **Paid:**
 
