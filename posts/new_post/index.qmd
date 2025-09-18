@@ -97,7 +97,7 @@ Learning is easier when it’s *personal*.
 
 -   [DataCamp: Introduction of Python](https://www.datacamp.com/courses/intro-to-python-for-data-science) (disclaimer: I have written [courses](https://www.datacamp.com/courses/data-storytelling-concepts) for DataCamp yet I am honestly also an avid user. Their format is clear, their content engaging.)
 
--   [Dataquest.io](https://www.dataquest.io/path/python-fundamentals-for-web-development-skill-track/) : There are two things that I really like about this site. First, the skill tracks make you think about *why* you are learning Python. For machine learning? For web development? Second, is that they have a “lifetime” fee option available. It *is* expensive, but one payment and you have free access to their materials for life. Not everyone provides that option because subscriptions are so lucrative.
+-   [Dataquest.io](https://www.dataquest.io/path/python-fundamentals-for-web-development-skill-track/) : There are two things that I like about this site. First, the skill tracks make you think about *why* you are learning Python. For machine learning? For web development? Second, is that they have a “lifetime” fee option available. It *is* expensive, but one payment and you have free access to their materials for life. Not everyone provides that option because subscriptions are so lucrative.
 
 ### **Step 3: Practice Daily — No Cramming Required**
 
