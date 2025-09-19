@@ -137,7 +137,7 @@ Prompts to try:
 
 -   *“How do I read a CSV file in Python and find the average?”*
 
-Don’t just copy — tweak the code, explore what changes, and ask follow-up questions.
+The trick is not to just copy — actively tweak the code, explore what changes, and ask follow-up questions.
 
 ### **💬 Learning Tips**
 
