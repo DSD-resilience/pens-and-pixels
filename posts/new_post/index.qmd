@@ -27,7 +27,7 @@ There are plenty of other great reasons to learn Python after 50:
 
 -   **It’s practical**: Python can help you automate repetitive tasks, manage your finances, analyze personal data, or even create custom tools tailored to your life.
 
--   **It’s mentally stimulating**: Learning to code is like learning a new language. It keeps your brain sharp, boosts problem-solving skills, and builds confidence.
+-   **It’s mentally stimulating**: Learning to code is like learning a new language. I take that back, because it *is* learning a new language (C#, Java, etc.). It keeps your brain sharp, boosts problem-solving skills, and builds confidence.
 
 -   **It’s empowering**: Python gives you the tools to *understand* and *shape* the digital world around you, instead of just being a passive user.
 
