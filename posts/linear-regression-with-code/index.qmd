@@ -15,7 +15,9 @@ In statistics, linear regression is a linear approach for modelling the relation
 
 Linear regression is a statistical technique used to model the relationship between a dependent variable (also known as the response variable) and one or more independent variables (also known as predictor variables). The goal of linear regression is to find the best linear relationship between the dependent variable and the independent variables.
 
-In simple linear regression, there is only one independent variable. The relationship between the dependent variable. The independent variable can be represented by a straight line, hence the term “linear” regression. The equation for a simple linear regression model is:
+In simple linear regression, there is only one independent variable. The relationship between the dependent variable and the independent variable can be represented by a straight line, hence the term “linear” regression.
+
+The equation for a simple linear regression model is:
 
 Y = a + bX + e
 
