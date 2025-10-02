@@ -79,4 +79,4 @@ We first load the data and build a simple linear regression model using the `lm
 
 # **Final Thought**
 
-Be advised that a linear relationship does not always exist between two variables, yet somehow they are related. The nature of the relationship just can't be described using a straight line. Linear regression is just one tool of many that can be utilized to describe the reality of your data.
+It is important to recognize that a linear relationship does not always exist between two variables, yet somehow they are related. The nature of the relationship just can't be described using a straight line. Linear regression is just one tool of many that can be utilized to describe the reality of your data.
