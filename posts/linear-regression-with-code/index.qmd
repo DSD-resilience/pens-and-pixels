@@ -2,7 +2,7 @@
 title: "Linear Regression for Gentle Souls"
 slug: "my-new-post"
 author: "John T. Miller"
-date: "2025-06-17"
+date: "2025-05-17"
 categories: [R, code, regression, analysis]
 image: "image1.jpg"
 ---
