@@ -7,7 +7,7 @@ categories: [fitness, health, analysis]
 image: "image2.jpg"
 ---
 
-![](dad%20drinks.jpg)
+![cheers to being more healthy](dad%20drinks.jpg){fig-align="center"}
 
 # **Dad Bod Be Gone**
 
