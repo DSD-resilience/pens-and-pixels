@@ -1,8 +1,8 @@
 ---
 title: "Dad Bod Be Gone"
-slug: "my-newer-post"
+slug: "my-newest-post"
 author: "John T. Miller"
-date: "2022-11-28"
+date: "2022-11-29"
 categories: [fitness, health, analysis]
 image: "image2.jpg"
 ---
